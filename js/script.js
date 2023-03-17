@@ -26,6 +26,7 @@ function drawSquare(content, sideNumSquares) {
 function play(e) { 
     e.preventDefault();
     const playground = document.getElementById('playground');
+    playground.innerHTML = '';
 
     //prendo il livello
     const level = document.getElementById('level').value;
