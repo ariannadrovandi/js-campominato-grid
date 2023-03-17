@@ -25,6 +25,7 @@ function drawSquare(content, sideNumSquares) {
 // evento levelForm
 function play(e) { 
     e.preventDefault();
+    const playground = document.getElementById('playground');
 
     //prendo il livello
     const level = document.getElementById('level').value;
@@ -50,6 +51,8 @@ function play(e) {
     console.log(squareXRow);
 
     for (let i = 1; i <= squareNumbers; i++) {
-        
+        const square = drawSquare(i, squareXRow);
+
+        playground.appendChild(square);
     };
 };
