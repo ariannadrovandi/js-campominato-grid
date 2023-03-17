@@ -12,6 +12,16 @@ height: calc(100% / 10);
 const levelForm = document.getElementById('levelForm');
 levelForm.addEventListener('submit', play);
 
+//funzione per disegnare la cella
+function drawSquare(content, sideNumSquares) {
+    const square = document.createElement('div');
+    square.classList.add('square');
+    square.style.width = `calc(100% / ${sideNumSquares})`;
+    square.style.height = square.style.width;
+    square.innerHTML = content;
+    return square;
+};
+
 // evento levelForm
 function play(e) { 
     e.preventDefault();
