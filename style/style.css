@@ -27,3 +27,8 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+.safe{
+    background-color: #16166D;
+    color: #FFFFFF;
+}

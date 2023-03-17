@@ -53,7 +53,9 @@ function play(e) {
 
     for (let i = 1; i <= squareNumbers; i++) {
         const square = drawSquare(i, squareXRow);
-
+        square.addEventListener('click', function () {
+            square.classList.add('safe');
+        });
         playground.appendChild(square);
     };
 };
