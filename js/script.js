@@ -34,4 +34,12 @@ function play(e) {
             break;
     };
     console.log(squareNumbers);
+
+    //determino il numero di celle per lato 
+    let squareXRow = Math.sqrt(squareNumbers);
+    console.log(squareXRow);
+
+    for (let i = 1; i <= squareNumbers; i++) {
+        
+    };
 };
